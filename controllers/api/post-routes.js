@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
       'description',
       'title',
       'created_at',
-      // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
     ],
     include: [
       {
@@ -46,7 +45,6 @@ router.get('/:id', (req, res) => {
       'description',
       'title',
       'created_at',
-      // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
     ],
     include: [
       {
@@ -94,7 +92,8 @@ router.post('/', withAuth, (req, res) => {
 router.put('/:id', withAuth, (req, res) => {
   Post.update(
     {
-      title: req.body.title
+      title: req.body.title,
+      description: req.body.description 
     },
     {
       where: {
