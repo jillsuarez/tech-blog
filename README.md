@@ -5,7 +5,7 @@
 I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
-  GitHub Repository:
+  ## GitHub Repository:
 
   https://github.com/jillsuarez/tech-blog
   ## Table of Contents
@@ -16,8 +16,9 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
   ## Installation
   Use 'npm i' to install express-handlebars, MySQL2, Sequelize, dotenv package, bycrypt package, express-session, and connect-session-sequelize packages.
   ## Usage
+
+![Alt text](/public/images/tech-blog-ss.png)
   
-  
-  GitHub Profile:
+  ## GitHub Profile:
   
   https://github.com/jillsuarez
