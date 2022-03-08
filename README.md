@@ -11,8 +11,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#credits)
-  * [License](#license)
+ 
   ## Installation
   Use 'npm i' to install express-handlebars, MySQL2, Sequelize, dotenv package, bycrypt package, express-session, and connect-session-sequelize packages.
   ## Usage
