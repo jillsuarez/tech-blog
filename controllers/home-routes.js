@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
 // get all posts for homepage
@@ -88,12 +87,17 @@ router.get('/post/:id', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
+  try {
+    if (req.session.loggedIn) {
+      res.redirect('/');
+      return;
+    }
+    res.render('login');
+  } catch (error) {
+    res.json({msg:"Login Failed"})
   }
+  
 
-  res.render('login');
 });
 
 module.exports = router;
